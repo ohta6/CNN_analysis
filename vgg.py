@@ -19,5 +19,5 @@ link1_reduced = TSNE(n_components=2, random_state=0).fit_transform(link1_reshape
 link2_reduced = TSNE(n_components=2, random_state=0).fit_transform(link2_reshape)
 plt.scatter(link1_reduced[:,0], link1_reduced[:,1])
 plt.savefig('conv1_1.png')
-#plt.scatter(link2_reduced[:,0], link1_reduced[:,1])
+#plt.scatter(link2_reduced[:,0], link2_reduced[:,1])
 #plt.savefig('conv1_2.png')

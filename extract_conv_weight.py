@@ -25,7 +25,7 @@ for links in model.links():
     convs.append(links.conv5_3.W.data)
     break
 for i,conv in enumerate(convs):
-    with open('conv_{}.pickle'.format(i), mode='wb') as f:
+    with open('./conv_weights/conv_{}.pickle'.format(i), mode='wb') as f:
         pickle.dump(conv,f)
 # link1.shape = (n, 9)となるようにreshape
 """
